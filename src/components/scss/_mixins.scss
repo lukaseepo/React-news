@@ -1,0 +1,56 @@
+@mixin catalog {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+    @media screen and (max-width: 780px) {
+        grid-template-columns: 1fr;
+    }
+    .item{
+        width: 100%;
+        padding: 20px;
+        box-shadow: 1px 1px 6px 6px $grey2 inset;
+        .img{
+            width: 100%;
+            height: 200px;
+            margin-top: 20px;
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+        h4{
+            color: $cadetblue;
+            font-size: 15px;
+            padding-top: 15px;
+        }
+    }
+}
+
+
+@mixin catalog2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    @media screen and (max-width: 780px) {
+        grid-template-columns: 1fr;
+    }
+    .item{
+        width: 100%;
+        padding: 20px;
+        box-shadow: 1px 1px 6px 6px $grey2 inset;
+        .img{
+            width: 100%;
+            height: 200px;
+            margin-top: 20px;
+            background-size: cover;
+            background-position: center center;
+        }
+        h4{
+            color: $cadetblue;
+            font-size: 15px;
+            padding-top: 15px;
+        }
+    }
+}

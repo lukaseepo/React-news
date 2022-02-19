@@ -1,0 +1,57 @@
+@import '../scss/colors';
+
+body{
+  @media screen and (max-width:680px) {
+    overflow-x: hidden;
+  }
+  .search-container{
+    width: 490px;
+    display: flex;
+    justify-content: center;
+    transform: translateX(35px);
+    padding-top: 50px;
+    @media screen and (max-width:680px) {
+      width: 100%;
+    }
+  }
+  
+  input#search-bar{
+    margin: 0 auto;
+    width: 100%;
+    height: 45px;
+    padding: 0 20px;
+    font-size: 1rem;
+    border: 1px solid $grey;
+    outline: none;
+    &:focus{
+      border: 1px solid $lightblue;
+      transition: 0.35s ease;
+      color: $lightblue;
+      &::-webkit-input-placeholder{
+        transition: opacity 0.45s ease; 
+          opacity: 0;
+       }
+      &::-moz-placeholder {
+        transition: opacity 0.45s ease; 
+          opacity: 0;
+       }
+      &:-ms-placeholder {
+       transition: opacity 0.45s ease; 
+         opacity: 0;
+       }    
+     }
+   }  
+  .search-icon{
+    position: relative;
+    float: right;
+    width: 75px;
+    height: 75px;
+    top: -15px;
+    right: 75px;
+  }
+}  
+ 
+
+  
+  
+  

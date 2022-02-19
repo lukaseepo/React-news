@@ -1,0 +1,29 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border-style: none;
+  outline: none;
+  list-style: none;
+  list-style-type: none;
+  outline-style: none;
+  font-family: 'Roboto';
+  text-decoration: none;
+}
+
+
+body{
+  background-color: black;
+}
+
+.container{
+  max-width: 980px;
+  margin: auto;
+}
+
+@media screen and (max-width: 980px)  {
+  .container{
+    width: 100%;
+  }
+}
+
